@@ -4,7 +4,7 @@ export const LoadingScreen: React.FC<{ onComplete: () => void }> = ({
   onComplete,
 }) => {
   const [text, setText] = useState("");
-  const fullText = "INITIALIZING MIDNIGHT GLOW...";
+  const fullText = "SUMMONING PARAS'S UNIVERSE...";
 
   useEffect(() => {
     let i = 0;
