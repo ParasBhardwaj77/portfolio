@@ -20,8 +20,8 @@ export const LoadingScreen: React.FC<{ onComplete: () => void }> = ({
   }, [onComplete]);
 
   return (
-    <div className="fixed inset-0 bg-[#030014] z-[100] flex flex-col items-center justify-center font-mono">
-      <div className="text-cyan-400 text-xl md:text-2xl tracking-[0.2em] mb-4">
+    <div className="fixed inset-0 bg-[#030014] z-[100] flex flex-col items-center justify-center font-mono px-4">
+      <div className="text-cyan-400 text-base md:text-xl lg:text-2xl tracking-[0.15em] md:tracking-[0.2em] mb-4 text-center">
         {text}
         <span className="animate-pulse">_</span>
       </div>
