@@ -25,4 +25,42 @@
     -webkit-text-stroke: 1px #00d2ff;
     text-shadow: 0 0 10px #00d2ff;
   }
+
+  .star {
+    @apply absolute rounded-full bg-white pointer-events-none;
+    box-shadow: 0 0 4px rgba(255, 255, 255, 0.8);
+  }
+
+  .star-twinkle {
+    animation: twinkle var(--twinkle-duration, 3s) ease-in-out infinite;
+  }
+
+  @keyframes twinkle {
+    0%,
+    100% {
+      opacity: 0.3;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1.2);
+    }
+  }
+
+  @keyframes float-slow {
+    0%,
+    100% {
+      transform: translateY(0) translateX(0);
+    }
+    33% {
+      transform: translateY(-10px) translateX(5px);
+    }
+    66% {
+      transform: translateY(5px) translateX(-5px);
+    }
+  }
+}
+
+:root {
+  --twinkle-duration: 3s;
 }

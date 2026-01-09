@@ -35,7 +35,7 @@ export const Navigation: React.FC = () => {
       </div>
 
       {/* Mobile: Bottom Fixed Bar */}
-      <div className="md:hidden fixed bottom-6 left-1/2 -translate-x-1/2 w-[90%] bg-black/40 backdrop-blur-2xl border border-white/10 z-50 flex justify-around p-4 rounded-3xl shadow-2xl">
+      <div className="md:hidden fixed bottom-6 left-1/2 -translate-x-1/2 w-[92%] bg-black/60 backdrop-blur-3xl border border-white/10 z-50 flex justify-around items-center p-3 rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.5)]">
         <MobileNavButton
           icon={<ArrowRight />}
           label="WORK"
@@ -50,10 +50,10 @@ export const Navigation: React.FC = () => {
           href="/resume.pdf"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex flex-col items-center gap-1 font-bold text-[10px] text-white/70 hover:text-white transition-colors"
+          className="flex flex-col items-center gap-1 font-bold text-[10px] text-white/70 hover:text-white transition-all group"
         >
-          <div className="p-2 bg-white/5 text-cyan-400 rounded-xl border border-white/10 active:scale-95 transition-all">
-            <FileText size={18} />
+          <div className="p-2.5 bg-gradient-to-br from-yellow-500/20 to-amber-600/20 text-yellow-400 rounded-xl border border-yellow-500/20 group-active:scale-90 transition-all shadow-glow">
+            <FileText size={20} />
           </div>
           RESUME
         </a>
@@ -69,11 +69,11 @@ const MobileNavButton: React.FC<{
 }> = ({ icon, label, onClick }) => (
   <button
     onClick={onClick}
-    className="flex flex-col items-center gap-1 font-bold text-[10px] text-white/70 hover:text-white transition-colors"
+    className="flex flex-col items-center gap-1 font-bold text-[10px] text-white/70 hover:text-white transition-all group"
   >
-    <div className="p-2 bg-white/5 text-cyan-400 rounded-xl border border-white/10 active:scale-95 transition-all">
+    <div className="p-2.5 bg-white/5 text-cyan-400 rounded-xl border border-white/10 group-active:scale-90 transition-all shadow-glow-primary">
       {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
-      {React.cloneElement(icon as any, { size: 18 })}
+      {React.cloneElement(icon as any, { size: 20 })}
     </div>
     {label}
   </button>

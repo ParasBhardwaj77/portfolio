@@ -93,15 +93,15 @@ export const Contact: React.FC = () => {
         </div>
       </div>
 
-      <div className="contact-grid max-w-4xl mx-auto text-center relative z-10 mt-10">
-        <h2 className="text-4xl md:text-7xl font-display font-bold mb-16 text-white drop-shadow-glow">
+      <div className="contact-grid max-w-4xl mx-auto text-center relative z-10 mt-6 md:mt-10">
+        <h2 className="text-4xl md:text-7xl font-display font-bold mb-10 md:mb-16 text-white drop-shadow-glow">
           LET'S TALK
         </h2>
 
-        <div className="contact-grid grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+        <div className="contact-grid grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8 mb-10 md:mb-12">
           <a
             href={`mailto:${resumeData.contact.email}`}
-            className="contact-card bg-white/5 backdrop-blur-xl border border-white/10 p-8 hover:border-cyan-500/50 transition-all duration-300 group rounded-2xl shadow-2xl"
+            className="contact-card bg-white/5 backdrop-blur-xl border border-white/10 p-6 md:p-8 hover:border-cyan-500/50 transition-all duration-300 group rounded-2xl shadow-2xl"
             onMouseEnter={(e) => {
               gsap.to(e.currentTarget.querySelector("svg"), {
                 y: -15,
@@ -120,10 +120,10 @@ export const Contact: React.FC = () => {
             }}
           >
             <Mail
-              size={48}
+              size={40}
               className="mx-auto mb-4 group-hover:text-cyan-400 transition-all"
             />
-            <div className="text-xl font-bold group-hover:text-cyan-400 transition-colors">
+            <div className="text-lg md:text-xl font-bold group-hover:text-cyan-400 transition-colors break-words">
               {resumeData.contact.email}
             </div>
             <div className="text-sm opacity-60">Email Me</div>
@@ -133,7 +133,7 @@ export const Contact: React.FC = () => {
             href={resumeData.contact.linkedin}
             target="_blank"
             rel="noreferrer"
-            className="contact-card bg-white/5 backdrop-blur-xl border border-white/10 p-8 hover:border-purple-500/50 transition-all duration-300 group rounded-2xl shadow-2xl"
+            className="contact-card bg-white/5 backdrop-blur-xl border border-white/10 p-6 md:p-8 hover:border-purple-500/50 transition-all duration-300 group rounded-2xl shadow-2xl"
             onMouseEnter={(e) => {
               const svg = e.currentTarget.querySelector("svg");
               gsap.to(svg, {
@@ -163,17 +163,17 @@ export const Contact: React.FC = () => {
             }}
           >
             <Linkedin
-              size={48}
+              size={40}
               className="mx-auto mb-4 group-hover:text-purple-400 transition-all duration-500"
             />
-            <div className="text-xl font-bold group-hover:text-purple-400 transition-colors">
+            <div className="text-lg md:text-xl font-bold group-hover:text-purple-400 transition-colors">
               LinkedIn
             </div>
             <div className="text-sm opacity-60">Connect</div>
           </a>
         </div>
 
-        <div className="flex justify-center gap-12 mt-12">
+        <div className="flex justify-center gap-8 md:gap-12 mt-8 md:mt-12">
           <a
             href={resumeData.contact.github}
             target="_blank"
@@ -196,7 +196,7 @@ export const Contact: React.FC = () => {
               });
             }}
           >
-            <Github size={40} />
+            <Github size={32} className="md:w-[40px] md:h-[40px]" />
           </a>
           <a
             href={`tel:${resumeData.contact.phone}`}
@@ -218,11 +218,11 @@ export const Contact: React.FC = () => {
               });
             }}
           >
-            <Phone size={40} />
+            <Phone size={32} className="md:w-[40px] md:h-[40px]" />
           </a>
         </div>
 
-        <footer className="mt-24 text-center opacity-40 font-mono text-sm tracking-widest">
+        <footer className="mt-20 md:mt-24 text-center opacity-40 font-mono text-[10px] md:text-sm tracking-widest pb-20 md:pb-0">
           {new Date().getFullYear()} • {resumeData.name.toUpperCase()} • CRAFTED
           WITH PRECISION
         </footer>

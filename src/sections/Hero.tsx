@@ -107,31 +107,31 @@ export const Hero: React.FC = () => {
             </span>
           </div>
 
-          <h1 className="text-5xl md:text-7xl font-display font-black leading-tight mb-3 hero-text tracking-tighter">
+          <h1 className="text-4xl md:text-7xl font-display font-black leading-tight mb-4 hero-text tracking-tighter">
             HI, I'M{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-cyan-200 to-white drop-shadow-[0_0_20px_rgba(255,255,255,0.4)]">
               {resumeData.name.toUpperCase()}
             </span>
           </h1>
 
-          <div className="bg-purple-600/30 backdrop-blur-md text-white inline-block px-6 py-1.5 text-lg md:text-2xl font-bold mb-6 border border-purple-500/30 shadow-glow rounded-full hero-text">
+          <div className="bg-purple-600/30 backdrop-blur-md text-white inline-block px-5 py-1 text-base md:text-2xl font-bold mb-6 border border-purple-500/30 shadow-glow rounded-full hero-text">
             {resumeData.role}
           </div>
 
-          <p className="max-w-xl text-base md:text-lg font-medium text-slate-200 leading-relaxed mb-8 hero-text border-l-4 border-cyan-500/50 pl-6 bg-white/5 py-4 backdrop-blur-sm rounded-r-xl shadow-2xl">
+          <p className="max-w-xl text-sm md:text-lg font-medium text-slate-200 leading-relaxed mb-8 hero-text border-l-4 border-cyan-500/50 pl-4 md:pl-6 bg-white/5 py-3 md:py-4 backdrop-blur-sm rounded-r-xl shadow-2xl">
             {resumeData.summary}
           </p>
 
-          <div className="flex gap-4 hero-text">
+          <div className="flex flex-col sm:flex-row gap-4 hero-text">
             <a
               href="#projects"
-              className="bg-cyan-500 hover:bg-cyan-400 text-black px-6 py-2.5 font-bold rounded-lg transition-all transform hover:scale-105 shadow-glow-primary text-sm md:text-base"
+              className="bg-cyan-500 hover:bg-cyan-400 text-black px-8 py-3 font-bold rounded-lg transition-all transform hover:scale-105 shadow-glow-primary text-sm md:text-base text-center"
             >
               View My Work
             </a>
             <a
               href="#contact"
-              className="border border-white/20 bg-white/5 hover:bg-white/10 text-white px-6 py-2.5 font-bold rounded-lg transition-all backdrop-blur-md text-sm md:text-base"
+              className="border border-white/20 bg-white/5 hover:bg-white/10 text-white px-8 py-3 font-bold rounded-lg transition-all backdrop-blur-md text-sm md:text-base text-center"
             >
               Get In Touch
             </a>
@@ -147,7 +147,7 @@ export const Hero: React.FC = () => {
               <img
                 src="/paras.png"
                 alt="Paras Bhardwaj"
-                className="w-48 h-48 md:w-72 md:h-72 object-cover opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all duration-1000 rounded-xl"
+                className="w-56 h-56 md:w-72 md:h-72 object-cover opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all duration-1000 rounded-xl"
               />
               {/* Corner tech accents */}
               <div className="absolute top-2 left-2 w-8 h-8 border-t-2 border-l-2 border-cyan-400"></div>
