@@ -147,7 +147,7 @@ export const Hero: React.FC = () => {
               <img
                 src="/paras.png"
                 alt="Paras Bhardwaj"
-                className="w-56 h-56 md:w-72 md:h-72 object-cover opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all duration-1000 rounded-xl"
+                className="w-56 h-56 md:w-72 md:h-72 object-cover object-top opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all duration-1000 rounded-xl"
               />
               {/* Corner tech accents */}
               <div className="absolute top-2 left-2 w-8 h-8 border-t-2 border-l-2 border-cyan-400"></div>
