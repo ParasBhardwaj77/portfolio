@@ -47,7 +47,7 @@ export const Hero: React.FC = () => {
   return (
     <section
       ref={containerRef}
-      className="h-screen flex flex-col justify-center px-6 pt-16 relative overflow-hidden"
+      className="min-h-screen flex flex-col justify-center px-6 pt-24 pb-20 md:pt-16 relative overflow-hidden"
     >
       {/* Background Star Overlay */}
       <div
@@ -99,7 +99,7 @@ export const Hero: React.FC = () => {
         <div className="absolute inset-0 bg-gradient-to-br from-purple-900/30 via-transparent to-pink-900/30 mix-blend-screen pointer-events-none"></div>
       </div>
 
-      <div className="max-w-6xl mx-auto w-full z-10 grid grid-cols-1 md:grid-cols-2 gap-8 items-center -mt-12">
+      <div className="max-w-6xl mx-auto w-full z-10 grid grid-cols-1 md:grid-cols-2 gap-8 items-center mt-0 md:-mt-12">
         <div className="order-2 md:order-1">
           <div className="mb-4 inline-block border border-cyan-500/30 bg-cyan-950/20 backdrop-blur-md px-4 py-1 shadow-glow-primary rounded-full hero-text">
             <span className="font-bold font-mono text-cyan-400 text-sm tracking-widest uppercase">
