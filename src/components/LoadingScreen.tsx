@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+  import React, { useEffect, useState } from "react";
 
 export const LoadingScreen: React.FC<{ onComplete: () => void }> = ({
   onComplete,
