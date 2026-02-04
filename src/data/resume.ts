@@ -7,6 +7,8 @@ export const resumeData = {
     phone: "+91 7876445761",
     linkedin: "https://linkedin.com/in/parasbhardwaj77",
     github: "https://github.com/ParasBhardwaj77",
+    resumeUrl:
+      "https://drive.google.com/file/d/1brLSOK9-EIWcxhz5XLEw04AoLbVoykEa/view?usp=drivesdk",
   },
   summary:
     "Full Stack Developer with strong command over the MERN stack and Java-based backend development. Experienced in delivering scalable microservices, high-quality web applications, and cloud-ready solutions built with clean architectures provided by modern engineering practices.",

@@ -1,6 +1,7 @@
 import React from "react";
 import { ArrowRight, FileText, Mail } from "lucide-react";
 import { NeoButton } from "./NeoButton";
+import { resumeData } from "../data/resume";
 
 export const Navigation: React.FC = () => {
   const scrollToSection = (id: string) => {
@@ -8,7 +9,7 @@ export const Navigation: React.FC = () => {
   };
 
   const openResume = () => {
-    window.open("/resume.pdf", "_blank");
+    window.open(resumeData.contact.resumeUrl, "_blank");
   };
 
   return (
@@ -25,7 +26,7 @@ export const Navigation: React.FC = () => {
           CONTACT
         </NeoButton>
         <a
-          href="/resume.pdf"
+          href={resumeData.contact.resumeUrl}
           target="_blank"
           rel="noopener noreferrer"
           className="bg-yellow-500/80 hover:bg-yellow-500 text-black border-yellow-400 border font-display font-bold px-6 py-3 transition-all duration-300 rounded-lg backdrop-blur-sm active:scale-95 text-sm md:text-base flex items-center gap-2"
@@ -47,7 +48,7 @@ export const Navigation: React.FC = () => {
           onClick={() => scrollToSection("contact")}
         />
         <a
-          href="/resume.pdf"
+          href={resumeData.contact.resumeUrl}
           target="_blank"
           rel="noopener noreferrer"
           className="flex flex-col items-center gap-1 font-bold text-[10px] text-white/70 hover:text-white transition-all group"
